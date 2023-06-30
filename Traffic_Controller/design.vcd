@@ -1,0 +1,121 @@
+$date
+	Fri Jun 30 17:17:28 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module test $end
+$var wire 1 ! MG $end
+$var wire 1 " MR $end
+$var wire 1 # MY $end
+$var wire 1 $ SG $end
+$var wire 1 % SR $end
+$var wire 1 & ST $end
+$var wire 1 ' SY $end
+$var reg 1 ( C $end
+$var reg 1 ) TL $end
+$var reg 1 * TS $end
+$var reg 1 + clk $end
+$var reg 1 , rst $end
+$scope module uut $end
+$var wire 1 - C $end
+$var wire 1 ! MG $end
+$var wire 1 " MR $end
+$var wire 1 # MY $end
+$var wire 1 $ SG $end
+$var wire 1 % SR $end
+$var wire 1 & ST $end
+$var wire 1 ' SY $end
+$var wire 1 . TL $end
+$var wire 1 / TS $end
+$var wire 1 0 clk $end
+$var wire 1 1 rst $end
+$scope module n2 $end
+$var wire 1 - C $end
+$var wire 1 ! MG $end
+$var wire 1 " MR $end
+$var wire 1 # MY $end
+$var wire 1 $ SG $end
+$var wire 1 % SR $end
+$var wire 1 ' SY $end
+$var wire 1 . TL $end
+$var wire 1 / TS $end
+$var wire 1 0 clk $end
+$var wire 1 1 rst $end
+$var reg 1 2 ST $end
+$var reg 6 3 state [6:1] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b1100 3
+02
+11
+00
+0/
+0.
+0-
+1,
+0+
+0*
+0)
+0(
+0'
+0&
+1%
+0$
+0#
+0"
+1!
+$end
+#100000
+1#
+0!
+12
+1&
+b10100 3
+1+
+10
+0,
+01
+1(
+1-
+1)
+1.
+#200000
+0+
+00
+1,
+11
+0(
+0-
+0)
+0.
+#300000
+1"
+0#
+0%
+1$
+b100001 3
+12
+1&
+1+
+10
+0,
+01
+1)
+1.
+1*
+1/
+#400000
+0+
+00
+1(
+1-
+0)
+0.

@@ -1,0 +1,204 @@
+#! /usr/share/iverilog-0.9.6/bin/vvp
+:ivl_version "0.9.6 " "(v0_9_6)";
+:vpi_time_precision - 12;
+:vpi_module "system";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_0x2190740 .scope module, "test" "test" 2 2;
+ .timescale -9 -12;
+v0x21c2d20_0 .var "C", 0 0;
+v0x21c2da0_0 .net "MG", 0 0, L_0x21c3c10; 1 drivers
+v0x21c2e70_0 .net "MR", 0 0, L_0x21c3a80; 1 drivers
+v0x21c2f40_0 .net "MY", 0 0, L_0x21c3b20; 1 drivers
+v0x21c3010_0 .net "SG", 0 0, L_0x21c3e80; 1 drivers
+v0x21c30e0_0 .net "SR", 0 0, L_0x21c3cb0; 1 drivers
+v0x21c31b0_0 .net "ST", 0 0, v0x21c1f00_0; 1 drivers
+v0x21c3280_0 .net "SY", 0 0, L_0x21c3de0; 1 drivers
+v0x21c33a0_0 .var "TL", 0 0;
+v0x21c3470_0 .var "TS", 0 0;
+v0x21c34f0_0 .var "clk", 0 0;
+v0x21c35c0_0 .var "rst", 0 0;
+S_0x2190390 .scope module, "uut" "traffic" 2 11, 3 3, S_0x2190740;
+ .timescale -9 -12;
+v0x21c2480_0 .net "C", 0 0, v0x21c2d20_0; 1 drivers
+v0x21c2520_0 .alias "MG", 0 0, v0x21c2da0_0;
+v0x21c25d0_0 .alias "MR", 0 0, v0x21c2e70_0;
+v0x21c2680_0 .alias "MY", 0 0, v0x21c2f40_0;
+v0x21c2760_0 .alias "SG", 0 0, v0x21c3010_0;
+v0x21c2810_0 .alias "SR", 0 0, v0x21c30e0_0;
+v0x21c2890_0 .alias "ST", 0 0, v0x21c31b0_0;
+v0x21c2940_0 .alias "SY", 0 0, v0x21c3280_0;
+v0x21c29f0_0 .net "TL", 0 0, v0x21c33a0_0; 1 drivers
+v0x21c2aa0_0 .net "TS", 0 0, v0x21c3470_0; 1 drivers
+v0x21c2b50_0 .net "clk", 0 0, v0x21c34f0_0; 1 drivers
+v0x21c2c00_0 .net "rst", 0 0, v0x21c35c0_0; 1 drivers
+S_0x218ffe0 .scope module, "n2" "fsm" 3 6, 3 26, S_0x2190390;
+ .timescale -9 -12;
+P_0x21a4388 .param/l "MRG" 3 29, C4<001100>;
+P_0x21a43b0 .param/l "MRY" 3 30, C4<010100>;
+P_0x21a43d8 .param/l "SRG" 3 31, C4<100001>;
+P_0x21a4400 .param/l "SRY" 3 32, C4<100010>;
+v0x21a4640_0 .alias "C", 0 0, v0x21c2480_0;
+v0x21c1b90_0 .alias "MG", 0 0, v0x21c2da0_0;
+v0x21c1c30_0 .alias "MR", 0 0, v0x21c2e70_0;
+v0x21c1cd0_0 .alias "MY", 0 0, v0x21c2f40_0;
+v0x21c1d80_0 .alias "SG", 0 0, v0x21c3010_0;
+v0x21c1e20_0 .alias "SR", 0 0, v0x21c30e0_0;
+v0x21c1f00_0 .var "ST", 0 0;
+v0x21c1fa0_0 .alias "SY", 0 0, v0x21c3280_0;
+v0x21c2090_0 .alias "TL", 0 0, v0x21c29f0_0;
+v0x21c2130_0 .alias "TS", 0 0, v0x21c2aa0_0;
+v0x21c2230_0 .alias "clk", 0 0, v0x21c2b50_0;
+v0x21c22d0_0 .alias "rst", 0 0, v0x21c2c00_0;
+v0x21c23e0_0 .var "state", 6 1;
+E_0x21950d0 .event posedge, v0x21c2230_0;
+L_0x21c3a80 .part v0x21c23e0_0, 5, 1;
+L_0x21c3b20 .part v0x21c23e0_0, 4, 1;
+L_0x21c3c10 .part v0x21c23e0_0, 3, 1;
+L_0x21c3cb0 .part v0x21c23e0_0, 2, 1;
+L_0x21c3de0 .part v0x21c23e0_0, 1, 1;
+L_0x21c3e80 .part v0x21c23e0_0, 0, 1;
+S_0x218f600 .scope module, "timer" "timer" 3 10;
+ .timescale -9 -12;
+v0x21c3700_0 .net "ST", 0 0, C4<z>; 0 drivers
+v0x21c3780_0 .net "TL", 0 0, L_0x21c4080; 1 drivers
+v0x21c3800_0 .net "TS", 0 0, L_0x21c3fa0; 1 drivers
+v0x21c3880_0 .net/s *"_s0", 31 0, C4<00000000000000000000000000000100>; 1 drivers
+v0x21c3900_0 .net/s *"_s4", 31 0, C4<00000000000000000000000000001110>; 1 drivers
+v0x21c3980_0 .net "clk", 0 0, C4<z>; 0 drivers
+v0x21c3a00_0 .var/i "value", 31 0;
+E_0x21c2cf0 .event posedge, v0x21c3980_0, v0x21c3700_0;
+L_0x21c3fa0 .cmp/ge.s 32, v0x21c3a00_0, C4<00000000000000000000000000000100>;
+L_0x21c4080 .cmp/ge.s 32, v0x21c3a00_0, C4<00000000000000000000000000001110>;
+    .scope S_0x218ffe0;
+T_0 ;
+    %movi 8, 12, 6;
+    %set/v v0x21c23e0_0, 8, 6;
+    %set/v v0x21c1f00_0, 0, 1;
+    %end;
+    .thread T_0;
+    .scope S_0x218ffe0;
+T_1 ;
+    %wait E_0x21950d0;
+    %load/v 8, v0x21c22d0_0, 1;
+    %jmp/0xz  T_1.0, 8;
+    %movi 8, 12, 6;
+    %set/v v0x21c23e0_0, 8, 6;
+    %set/v v0x21c1f00_0, 1, 1;
+    %jmp T_1.1;
+T_1.0 ;
+    %set/v v0x21c1f00_0, 0, 1;
+    %load/v 8, v0x21c23e0_0, 6;
+    %cmpi/u 8, 12, 6;
+    %jmp/1 T_1.2, 6;
+    %cmpi/u 8, 20, 6;
+    %jmp/1 T_1.3, 6;
+    %cmpi/u 8, 33, 6;
+    %jmp/1 T_1.4, 6;
+    %cmpi/u 8, 34, 6;
+    %jmp/1 T_1.5, 6;
+    %jmp T_1.6;
+T_1.2 ;
+    %load/v 8, v0x21c2090_0, 1;
+    %load/v 9, v0x21a4640_0, 1;
+    %and 8, 9, 1;
+    %jmp/0xz  T_1.7, 8;
+    %movi 8, 20, 6;
+    %set/v v0x21c23e0_0, 8, 6;
+    %set/v v0x21c1f00_0, 1, 1;
+T_1.7 ;
+    %jmp T_1.6;
+T_1.3 ;
+    %load/v 8, v0x21c2130_0, 1;
+    %jmp/0xz  T_1.9, 8;
+    %movi 8, 33, 6;
+    %set/v v0x21c23e0_0, 8, 6;
+    %set/v v0x21c1f00_0, 1, 1;
+T_1.9 ;
+    %jmp T_1.6;
+T_1.4 ;
+    %load/v 8, v0x21c2090_0, 1;
+    %load/v 9, v0x21a4640_0, 1;
+    %inv 9, 1;
+    %or 8, 9, 1;
+    %jmp/0xz  T_1.11, 8;
+    %movi 8, 34, 6;
+    %set/v v0x21c23e0_0, 8, 6;
+    %set/v v0x21c1f00_0, 1, 1;
+T_1.11 ;
+    %jmp T_1.6;
+T_1.5 ;
+    %load/v 8, v0x21c2130_0, 1;
+    %jmp/0xz  T_1.13, 8;
+    %movi 8, 12, 6;
+    %set/v v0x21c23e0_0, 8, 6;
+    %set/v v0x21c1f00_0, 1, 1;
+T_1.13 ;
+    %jmp T_1.6;
+T_1.6 ;
+T_1.1 ;
+    %jmp T_1;
+    .thread T_1;
+    .scope S_0x2190740;
+T_2 ;
+    %vpi_call 2 14 "$dumpfile", "design.vcd";
+    %vpi_call 2 15 "$dumpvars", 1'sb0, S_0x2190740;
+    %set/v v0x21c3470_0, 0, 1;
+    %set/v v0x21c33a0_0, 0, 1;
+    %set/v v0x21c2d20_0, 0, 1;
+    %set/v v0x21c35c0_0, 1, 1;
+    %set/v v0x21c34f0_0, 0, 1;
+    %delay 100000, 0;
+    %set/v v0x21c3470_0, 0, 1;
+    %set/v v0x21c33a0_0, 1, 1;
+    %set/v v0x21c2d20_0, 1, 1;
+    %set/v v0x21c35c0_0, 0, 1;
+    %delay 100000, 0;
+    %set/v v0x21c3470_0, 0, 1;
+    %set/v v0x21c33a0_0, 0, 1;
+    %set/v v0x21c2d20_0, 0, 1;
+    %set/v v0x21c35c0_0, 1, 1;
+    %delay 100000, 0;
+    %set/v v0x21c3470_0, 1, 1;
+    %set/v v0x21c33a0_0, 1, 1;
+    %set/v v0x21c2d20_0, 0, 1;
+    %set/v v0x21c35c0_0, 0, 1;
+    %delay 100000, 0;
+    %set/v v0x21c3470_0, 1, 1;
+    %set/v v0x21c33a0_0, 0, 1;
+    %set/v v0x21c2d20_0, 1, 1;
+    %set/v v0x21c35c0_0, 0, 1;
+    %vpi_call 2 22 "$finish";
+    %end;
+    .thread T_2;
+    .scope S_0x2190740;
+T_3 ;
+    %delay 100000, 0;
+    %load/v 8, v0x21c34f0_0, 1;
+    %inv 8, 1;
+    %set/v v0x21c34f0_0, 8, 1;
+    %jmp T_3;
+    .thread T_3;
+    .scope S_0x218f600;
+T_4 ;
+    %wait E_0x21c2cf0;
+    %load/v 8, v0x21c3700_0, 1;
+    %mov 9, 0, 2;
+    %cmpi/u 8, 1, 3;
+    %jmp/0xz  T_4.0, 4;
+    %set/v v0x21c3a00_0, 0, 32;
+    %jmp T_4.1;
+T_4.0 ;
+    %load/v 8, v0x21c3a00_0, 32;
+    %mov 40, 39, 1;
+    %addi 8, 1, 33;
+    %set/v v0x21c3a00_0, 8, 32;
+T_4.1 ;
+    %jmp T_4;
+    .thread T_4;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "testbench.sv";
+    "design.sv";
